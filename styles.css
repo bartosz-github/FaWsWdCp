@@ -1,13 +1,13 @@
+body {
+    background-color: #F0F0D8;
+}
+
 .one {
     color: indianred;
 }
 
 .two{
     text-align: center;
-}
-
-body {
-    background-color: slategray;
 }
 
 a {
@@ -17,4 +17,40 @@ a {
 
 a:hover {
     color: #6633ff;
+}
+
+.tables {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:  #f1f1f1; 
+    align-items: center;
+}
+
+.table > div {
+    background-color: #f1f1f1; 
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;    
+}
+
+/* .flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+  .flex-container > div {
+    background-color: #f1f1f1; 
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+} */
+
+table {
+    background-color: #FBF7F1;
+    color:rgb(43, 91, 108);
 }
