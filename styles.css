@@ -35,7 +35,7 @@ a:hover {
     font-size: 30px;    
 }
 
-/* .flex-container {
+.flex-container {
     display: flex;
     background-color: DodgerBlue;
     justify-content: center;
@@ -48,9 +48,49 @@ a:hover {
     margin: 10px;
     padding: 20px;
     font-size: 30px;
-} */
+} 
 
 table {
     background-color: #FBF7F1;
     color:rgb(43, 91, 108);
 }
+
+
+/*####################################################################################################################*/
+/*############################################### MEDIA QUERIES ######################################################*/
+/*###################### XS devices < 575, default, no MQ #######################*/
+
+/*#########################################################################*/
+/*########### Small devices 576px - 767px width ##########################*/
+
+@media screen and (min-width: 576px) {
+    body {
+      background-color: blue;
+    }
+    .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    /*##########################*/
+    /* show current MQ setting */
+    .MQ_viewport::after {
+      content: "Small devices 576px - 767px width";
+    }
+    /* show current MQ setting */
+    /*########################*/
+
+
+      /*#########################*/
+     /*  hide image in this MQ  */
+      .Persona {
+         display: none;
+      }
+      /* hide image in this MQ  */
+     /*########################*/
+
+  }
+/*############################# Small devices ##############################*/
+/*#########################################################################*/
