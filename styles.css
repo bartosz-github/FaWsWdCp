@@ -21,7 +21,7 @@ a:hover {
 
 .tables {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color:  #f1f1f1; 
@@ -35,7 +35,7 @@ a:hover {
     font-size: 30px;    
 }
 
-.flex-container {
+/* .flex-container {
     display: flex;
     background-color: DodgerBlue;
     justify-content: center;
@@ -48,7 +48,7 @@ a:hover {
     margin: 10px;
     padding: 20px;
     font-size: 30px;
-} 
+}  */
 
 table {
     background-color: #FBF7F1;
@@ -59,7 +59,10 @@ table {
 /*####################################################################################################################*/
 /*############################################### MEDIA QUERIES ######################################################*/
 /*###################### XS devices < 575, default, no MQ #######################*/
-
+/* @media screen and (min-width: 280px) {
+    body {
+      background-color: slategray;
+    } */
 /*#########################################################################*/
 /*########### Small devices 576px - 767px width ##########################*/
 
@@ -67,7 +70,7 @@ table {
     body {
       background-color: blue;
     }
-    .flex-container {
+    .tables {
         display: flex;
         background-color: DodgerBlue;
         justify-content: center;
@@ -94,3 +97,100 @@ table {
   }
 /*############################# Small devices ##############################*/
 /*#########################################################################*/
+
+/*#########################################################################*/
+/*################ Medium devices 768px - 991px width ####################*/
+
+@media screen and (min-width: 768px) {
+    body {
+      background-color: green;
+    }
+    .tables {
+        display: flex;
+        background-color: DodgerBlue;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    /*##########################*/
+    /* show current MQ setting */
+    .MQ_viewport::after {
+        content: "Medium devices 768px - 991px width";
+      }
+    /* show current MQ setting */
+    /*########################*/
+
+
+      /*#########################*/
+     /*  hide image in this MQ  */
+      .Persona {
+         display: none;
+      }
+      /* hide image in this MQ  */
+     /*########################*/
+
+  }
+/*############################# Medium devices #############################*/
+/*#########################################################################*/
+/*###################### Large 992px - 1199px width ######################*/
+@media screen and (min-width: 992px) {
+    body {
+      background-color: yellow;
+    }
+    .tables {
+        display: flex;
+        background-color: DodgerBlue;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+      /*##########################*/
+      /* show current MQ setting */
+      .MQ_viewport::after {
+        content: "Large 992px - 1199px width";
+      }
+      /* show current MQ setting */
+      /*########################*/
+
+      
+      /*##########################*/
+      /* set up image in this MQ */
+      .Persona {
+        display: none;
+      } 
+      /* set up image in this MQ */
+      /*########################*/
+  }
+/*############################# Large devices ################################*/
+/*###########################################################################*/
+/*################# Extra Large 1200px width and above #####################*/
+@media screen and (min-width: 1200px) {
+    body {
+      background-color: red;
+    }
+    .tables {
+        display: flex;
+        background-color: DodgerBlue;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+      /*##########################*/
+      /* show current MQ setting */
+      .MQ_viewport::after {
+        content: "Extra Large 1200px width and above";
+      }
+      /* show current MQ setting */
+      /*########################*/
+      
+      /*##########################*/
+      /* set up image in this MQ */
+      .Persona {
+        display: none;
+      } 
+      /* set up image in this MQ */
+      /*########################*/
+  }
+/*################# Extra Large #####################*/
+/*############################################### MEDIA QUERIES ######################################################*/
+  /*####################################################################################################################*/
