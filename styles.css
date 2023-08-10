@@ -35,6 +35,12 @@ a:hover {
     font-size: 30px;    
 }
 
+
+table, th, td {
+  border: 1px solid darkslategray;
+  border-style:dotted;
+}
+
 /* .flex-container {
     display: flex;
     background-color: DodgerBlue;
