@@ -56,6 +56,23 @@ table, th, td {
     font-size: 30px;
 }  */
 
+
+.groups {
+  border: none;
+  color: #0499ff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+/*
+  display: inline-block;
+  width: 50px;
+  border: 1px solid black;
+*/
+}
+
+
 table {
     background-color: #FBF7F1;
     color:rgb(43, 91, 108);
